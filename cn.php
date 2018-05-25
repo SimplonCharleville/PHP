@@ -6,7 +6,7 @@ $dbname="exo-250518";
 $con = mysqli_connect($host, $user, $password, $dbname);
 
 if (!$con) {
-  echo "Erreur: " . mysqli_connect_error();
+  echo "Erreur : " . mysqli_connect_error();
 	exit();
 }
 
