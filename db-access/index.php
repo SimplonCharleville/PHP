@@ -14,11 +14,6 @@
     echo "Erreur!: " . $e->getMessage() . "<br/>";
     die();
   }
-
-  // Requête SQL qui va retourner toutes les entrées de la table "films"
-  $reponse = $dbh->prepare('SELECT * FROM films');
-  // Execution de la requête
-  $reponse->execute();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,6 +28,11 @@
 <body>
   <main>
   <?php
+  // Requête SQL qui va retourner toutes les entrées de la table "films"
+  $reponse = $dbh->prepare('SELECT * FROM films');
+  // Execution de la requête
+  $reponse->execute();
+  
   // On affiche chaque entrée une à une
   while ($row = $reponse->fetch(PDO::FETCH_ASSOC))
   {
