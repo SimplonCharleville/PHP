@@ -1,5 +1,5 @@
 <?php
-  // Déclaration des varibles de connexion
+  // Déclaration des variables de connexion
   $host_name = 'localhost'; // Localhost
   $database = 'vod'; // Nom de la base de données
   $user_name = 'root'; // Nom d'utilisateur
