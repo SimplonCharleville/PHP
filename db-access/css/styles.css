@@ -1,0 +1,36 @@
+/*RESET*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,tr,td,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{margin:0;padding:0;border:0;outline:0;font-size:100%}ol,ul{list-style:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img,article,aside,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,subline,summary,time,video{display:block}
+/*/RESET*/
+
+html {
+    width: 100%;
+    min-height: 100%;
+    background: #fff;
+    font: 400 62.5% 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #575656;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  margin:30px;
+}
+main > div{
+  width:30%;
+}
+
+.resize {
+    max-width: 100%;
+    height: auto !important;
+}
+
+strong {
+    font-weight: 700;
+}
