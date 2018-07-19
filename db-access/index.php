@@ -1,5 +1,5 @@
 <?php
-  // Déclaration des variables de connexion
+  // Déclaration des variables de connexion (ici avec un serveur local)
   $host_name = 'localhost'; // Localhost
   $database = 'vod'; // Nom de la base de données
   $user_name = 'root'; // Nom d'utilisateur
@@ -9,7 +9,7 @@
   $dbh = null;
   try {
     $dbh = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-    echo "<p>Connexion au serveur MySQL établie avec succès via pdo.</p >";
+    //echo "<p>Connexion au serveur MySQL établie avec succès via pdo.</p >";
   } catch (PDOException $e) {
     echo "Erreur!: " . $e->getMessage() . "<br/>";
     die();
@@ -29,10 +29,11 @@
   <main>
   <?php
   // Requête SQL qui va retourner toutes les entrées de la table "films"
-  $reponse = $dbh->prepare('SELECT * FROM films');
+  $QueryToExecute = 'SELECT * FROM films';
+  $reponse = $dbh->prepare($QueryToExecute);
   // Execution de la requête
   $reponse->execute();
-  
+
   // On affiche chaque entrée une à une
   while ($row = $reponse->fetch(PDO::FETCH_ASSOC))
   {
@@ -40,7 +41,7 @@
     <div>
       <h1>Titre : <?php echo $row['Titre']; ?></h1>
       Date de sortie : <?php echo date("d/m/Y", strtotime($row['Date_sortie'])); ?><br /> <!-- Modifie le format de la date EN vers FR -->
-      <img src="img/<?php echo $row['Image']; ?>" class="resize" />
+      <a href="detail.php?id=<?php echo $row['ID']; ?>"><img src="img/<?php echo $row['Image']; ?>" class="resize" /></a>
     </div>
   <?php
   }
