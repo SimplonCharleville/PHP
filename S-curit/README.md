@@ -11,8 +11,8 @@
 * Confirmation du mot de passe (vérifier que le mot de passe correspond)
 * Captcha (celui que vous voulez)
 
-Tous les champs sont obligatoires.
-Vérifiez la saise côté back en PHP avec insertion en DB MySQL en utilisant les requêtes préparées PDO.
+Tous les champs sont obligatoires.  
+Vérifiez la saise côté back en PHP avec insertion en DB MySQL en utilisant les requêtes préparées PDO.  
 Paramétrer votre DB avec un nouvel utilisateur et les droits nécessaires.
 
 **2/ Créez une page de récap des données saisies**, à partir de l'ID en méthode GET
