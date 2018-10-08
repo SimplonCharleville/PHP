@@ -14,7 +14,7 @@
 Tous les champs sont obligatoires.  
 Vérifiez la saise côté back en PHP -> affichez un message d'erreur personnalisé si un champ est vide ou si la valeur est incorrecte  
 Si la saise est correcte -> insertion en DB MySQL en utilisant les requêtes préparées PDO.  
-Paramétrer votre DB avec un nouvel utilisateur et les droits nécessaires.
+Créez votre DB et un nouvel utilisateur avec les droits uniquement sur cette base.
 
 **2/ Créez une page de récap des données saisies**, à partir de l'ID en méthode GET
 * Utilisez htmlentities
