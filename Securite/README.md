@@ -18,4 +18,3 @@ Créez votre DB et un nouvel utilisateur avec les droits uniquement sur cette ba
 
 **2/ Créez une page de récap des données saisies**, à partir de l'ID en méthode GET
 * Utilisez htmlentities
-* Le mot passe s'affichera en * avec le nombre de caractères saisis.
