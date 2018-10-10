@@ -7,7 +7,7 @@
 * Code postal (vérifier le format à 5 chiffres)
 * Mot de passe (crypté en SHA1)
 * Confirmation du mot de passe (vérifier que le mot de passe correspond)
-* Captcha (celui que vous voulez)
+* Captcha (reCaptcha Google ou celui que vous voulez)
 
 Tous les champs sont obligatoires.  
 Vérifiez la saise côté back en PHP -> affichez un message d'erreur personnalisé si un champ est vide ou si la valeur est incorrecte  
