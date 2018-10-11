@@ -17,5 +17,5 @@ Créez votre DB et un nouvel utilisateur avec les droits uniquement sur cette ba
 **2/ Créez une page de récap des données saisies**, à partir de l'ID en méthode GET
 * Utilisez htmlspecialchars() ou htmlentities()
 
-### En sa voir plus :
+### En savoir plus :
 * [Cours sur OpenClassrooms](https://openclassrooms.com/fr/courses/2091901-protegez-vous-efficacement-contre-les-failles-web)
